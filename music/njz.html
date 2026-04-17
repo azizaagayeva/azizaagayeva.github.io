@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewJeans</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background: #000d1a;
+            background-image: radial-gradient(ellipse at 30% 60%, rgba(20, 80, 180, 0.18) 0%, transparent 60%),
+                              radial-gradient(ellipse at 80% 20%, rgba(0, 160, 220, 0.1) 0%, transparent 50%);
+            font-family: 'DM Sans', sans-serif;
+            color: #d6eeff;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            font-family: 'Playfair Display', serif;
+            color: #9dd8ff;
+            text-shadow: 0 0 30px rgba(59, 130, 246, 0.7), 0 0 60px rgba(30, 100, 220, 0.3);
+            animation: glow 2.5s ease-in-out infinite, bounce 3s ease-in-out infinite;
+            margin-bottom: 30px;
+            letter-spacing: 3px;
+        }
+        
+        h2 {
+            font-size: 1.6em;
+            font-family: 'Playfair Display', serif;
+            color: #8cc8f5;
+            text-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+        }
+        
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 20px rgba(59, 130, 246, 0.7), 0 0 40px rgba(30, 100, 220, 0.4); }
+            50% { text-shadow: 0 0 35px rgba(100, 180, 255, 1), 0 0 60px rgba(59, 130, 246, 0.6); }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        
+        .section {
+            background: rgba(10, 35, 80, 0.6);
+            border: 2px solid #2a5ea0;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(30, 80, 200, 0.25);
+            transition: all 0.4s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 50px rgba(60, 130, 250, 0.35);
+            border-color: #4d9fff;
+        }
+
+        .section p {
+            color: #aad4f5;
+        }
+        
+        .gif-container {
+            text-align: center;
+            margin: 25px 0;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(59, 130, 246, 0.5);
+            border: 3px dashed #2a5ea0;
+            transition: transform 0.3s ease;
+        }
+        
+        .gif-container:hover {
+            transform: scale(1.03);
+        }
+        
+        .gif-container img {
+            max-width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+            list-style: none;
+        }
+        
+        .members-grid li {
+            background: rgba(20, 60, 140, 0.5);
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid #2a5ea0;
+            color: #b8deff;
+            font-weight: 500;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        
+        .member-box {
+            border-radius: 18px;
+            padding: 22px;
+            margin-bottom: 18px;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .member-box:hover {
+            transform: translateY(-8px) rotate(0.5deg);
+            box-shadow: 0 20px 40px rgba(30, 80, 200, 0.5);
+        }
+
+        .member-box h2 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        .member-box p {
+            margin: 8px 0;
+            line-height: 1.6;
+            font-size: 1em;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #5ba3e0;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            border-bottom: 1px solid #2a5ea0;
+            padding-bottom: 2px;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: #9dd8ff; }
+    </style>
+</head>
+<body>
+
+    <a class="back-link" href="music.html">← Back to Music Fan Page</a>
+
+    <h1>🐰 𝒩ℯ𝓌𝒥ℯ𝒶𝓃𝓈 🐰</h1>
+
+    <!-- Get Up GIF -->
+    <div class="gif-container">
+        <img src="Newjeans_Get_Up_1st_Ep_GIF_-_Newjeans_get_up_1st_EP_-_Descobrir_e_Compartilhar_GIFs.gif" alt="NewJeans Get Up">
+    </div>
+
+    <!-- Group Info Box -->
+    <div class="section">
+        <h2>✨ ICONIC K-POP GROUP ✨</h2>
+        <p style="font-size: 1.1em; margin-top: 12px;">𝘼 𝙎𝙤𝙪𝙩𝙝 𝙆𝙤𝙧𝙚𝙖𝙣 𝙆-𝙥𝙤𝙥 𝙜𝙞𝙧𝙡 𝙜𝙧𝙤𝙪𝙥 𝙬𝙞𝙩𝙝 𝙖 𝙧𝙚𝙩𝙧𝙤 𝙨𝙤𝙪𝙣𝙙!</p>
+        <p>🎵 𝙁𝙖𝙢𝙚𝙙 𝙛𝙤𝙧 𝙣𝙚𝙬-𝙟𝙚𝙖𝙣𝙨 𝙖𝙚𝙨𝙩𝙝𝙚𝙩𝙞𝙘𝙨 & 𝙨𝙪𝙥𝙚𝙧 𝙩𝙖𝙡𝙚𝙣𝙩𝙚𝙙 𝙜𝙞𝙧𝙡𝙨! 𝘿𝙚𝙗𝙪𝙩𝙚𝙙 𝙅𝙪𝙡𝙮 22, 2022 💫</p>
+    </div>
+
+    <!-- Powerpuff pixel art GIF -->
+    <div class="gif-container">
+        <img src="download__1_.gif" alt="NewJeans Powerpuff Girls pixel art">
+    </div>
+
+    <!-- Members List Box -->
+    <div class="section">
+        <h2>🌟 𝙈𝙚𝙢𝙗𝙚𝙧𝙨 🌟</h2>
+        <ul class="members-grid">
+            <li>𝙈𝙞𝙣𝙟𝙞</li>
+            <li>𝙃𝙖𝙣𝙣𝙞</li>
+            <li>𝘿𝙖𝙣𝙞𝙚𝙡𝙡𝙚</li>
+            <li>𝙃𝙖𝙚𝙧𝙞𝙣</li>
+            <li>𝙃𝙮𝙚𝙞𝙣</li>
+        </ul>
+    </div>
+
+    <!-- Minji - Blue -->
+    <div style="background: linear-gradient(135deg, rgba(20, 60, 180, 0.85) 0%, rgba(10, 40, 140, 0.9) 100%);" class="member-box">
+        <h2>👑 𝙈𝙞𝙣𝙟𝙞</h2>
+        <p>𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙇𝙚𝙖𝙙𝙚𝙧</p>
+        <p>𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝙆𝙤𝙧𝙚𝙖𝙣</p>
+        <p>𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝙈𝙖𝙮 7, 2004</p>
+        <p>𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝘽𝙡𝙪𝙚 💙</p>
+        <p>𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙎𝙝𝙚 𝙡𝙤𝙫𝙚𝙨 𝙙𝙧𝙖𝙬𝙞𝙣𝙜 𝙖𝙣𝙙 𝙞𝙨 𝙠𝙣𝙤𝙬𝙣 𝙛𝙤𝙧 𝙝𝙚𝙧 𝙖𝙧𝙩𝙞𝙨𝙩𝙞𝙘 𝙨𝙠𝙞𝙡𝙡𝙨!</p>
+    </div>
+
+    <!-- Hanni - Pink -->
+    <div style="background: linear-gradient(135deg, rgba(160, 20, 90, 0.85) 0%, rgba(130, 10, 70, 0.9) 100%);" class="member-box">
+        <h2>🌸 𝙃𝙖𝙣𝙣𝙞</h2>
+        <p>𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙑𝙤𝙘𝙖𝙡𝙞𝙨𝙩</p>
+        <p>𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝘼𝙪𝙨𝙩𝙧𝙖𝙡𝙞𝙖𝙣-𝙑𝙞𝙚𝙩𝙣𝙖𝙢𝙚𝙨𝙚</p>
+        <p>𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝙊𝙘𝙩𝙤𝙗𝙚𝙧 6, 2004</p>
+        <p>𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝙋𝙞𝙣𝙠 🩷</p>
+        <p>𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙎𝙝𝙚 𝙨𝙥𝙚𝙖𝙠𝙨 𝙀𝙣𝙜𝙡𝙞𝙨𝙝, 𝙆𝙤𝙧𝙚𝙖𝙣, 𝙖𝙣𝙙 𝙑𝙞𝙚𝙩𝙣𝙖𝙢𝙚𝙨𝙚 𝙛𝙡𝙪𝙚𝙣𝙩𝙡𝙮!</p>
+    </div>
+
+    <!-- Danielle - Green -->
+    <div style="background: linear-gradient(135deg, rgba(5, 100, 60, 0.85) 0%, rgba(0, 70, 40, 0.9) 100%);" class="member-box">
+        <h2>🍃 𝘿𝙖𝙣𝙞𝙚𝙡𝙡𝙚</h2>
+        <p>𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙑𝙤𝙘𝙖𝙡𝙞𝙨𝙩</p>
+        <p>𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝙆𝙤𝙧𝙚𝙖𝙣-𝘼𝙪𝙨𝙩𝙧𝙖𝙡𝙞𝙖𝙣</p>
+        <p>𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝘼𝙥𝙧𝙞𝙡 11, 2005</p>
+        <p>𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝙂𝙧𝙚𝙚𝙣 💚</p>
+        <p>𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙎𝙝𝙚 𝙡𝙤𝙫𝙚𝙨 𝙗𝙖𝙠𝙞𝙣𝙜 𝙖𝙣𝙙 𝙝𝙖𝙨 𝙖 𝙜𝙧𝙚𝙖𝙩 𝙫𝙤𝙞𝙘𝙚!</p>
+    </div>
+
+    <!-- Haerin - Purple -->
+    <div style="background: linear-gradient(135deg, rgba(80, 20, 180, 0.85) 0%, rgba(55, 10, 140, 0.9) 100%);" class="member-box">
+        <h2>🐱 𝙃𝙖𝙚𝙧𝙞𝙣</h2>
+        <p>𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙑𝙤𝙘𝙖𝙡𝙞𝙨𝙩</p>
+        <p>𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝙆𝙤𝙧𝙚𝙖𝙣</p>
+        <p>𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝙈𝙖𝙮 15, 2006</p>
+        <p>𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝙋𝙪𝙧𝙥𝙡𝙚 💜</p>
+        <p>𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙆𝙣𝙤𝙬𝙣 𝙛𝙤𝙧 𝙝𝙚𝙧 𝙘𝙖𝙩-𝙡𝙞𝙠𝙚 𝙥𝙚𝙧𝙨𝙤𝙣𝙖𝙡𝙞𝙩𝙮 𝙖𝙣𝙙 𝙡𝙤𝙫𝙚𝙨 𝙘𝙖𝙩𝙨!</p>
+    </div>
+
+    <!-- Hyein - Yellow -->
+    <div style="background: linear-gradient(135deg, rgba(140, 90, 0, 0.85) 0%, rgba(100, 60, 0, 0.9) 100%);" class="member-box">
+        <h2>🌟 𝙃𝙮𝙚𝙞𝙣</h2>
+        <p>𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙈𝙖𝙠𝙣𝙖𝙚</p>
+        <p>𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝙆𝙤𝙧𝙚𝙖𝙣</p>
+        <p>𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝘼𝙥𝙧𝙞𝙡 21, 2008</p>
+        <p>𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝙔𝙚𝙡𝙡𝙤𝙬 💛</p>
+        <p>𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙏𝙝𝙚 𝙮𝙤𝙪𝙣𝙜𝙚𝙨𝙩 𝙢𝙚𝙢𝙗𝙚𝙧 𝙖𝙣𝙙 𝙡𝙤𝙫𝙚𝙨 𝙙𝙖𝙣𝙘𝙞𝙣𝙜!</p>
+    </div>
+
+</body>
+</html>
