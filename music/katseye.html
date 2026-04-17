@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATSEYE</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background: linear-gradient(135deg, #f5e6ff 0%, #e9d5ff 50%, #f5e6ff 100%);
+            background-size: 400% 400%;
+            font-family: 'Arial', cursive, sans-serif;
+            color: white;
+            padding: 20px;
+            animation: gradientShift 8s ease infinite;
+            min-height: 100vh;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 3.5em;
+            text-shadow: 0 0 20px rgba(255, 200, 255, 0.9), 0 0 40px rgba(168, 85, 247, 0.7);
+            animation: glow 2.5s ease-in-out infinite, bounce 3s ease-in-out infinite;
+            margin-bottom: 30px;
+            letter-spacing: 3px;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            text-shadow: 0 0 15px rgba(168, 85, 247, 0.8);
+            animation: glow 2s ease-in-out infinite;
+        }
+        
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 15px rgba(168, 85, 247, 0.6), 0 0 25px rgba(255, 200, 255, 0.4); }
+            50% { text-shadow: 0 0 25px rgba(168, 85, 247, 0.9), 0 0 40px rgba(255, 200, 255, 0.7); }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .section {
+            background: rgba(200, 132, 252, 0.15);
+            border: 3px solid #c084fc;
+            border-radius: 25px;
+            padding: 25px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(168, 85, 247, 0.3);
+            transition: all 0.4s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 50px rgba(168, 85, 247, 0.5);
+            border-color: #ff80ff;
+        }
+        
+        .gif-container {
+            text-align: center;
+            margin: 25px 0;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(168, 85, 247, 0.4);
+            border: 3px dashed #c084fc;
+            transition: transform 0.3s ease;
+        }
+        
+        .gif-container:hover {
+            transform: scale(1.05);
+        }
+        
+        .gif-container img {
+            max-width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .sparkle-text {
+            animation: sparkle 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.1); }
+        }
+        
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        ul li {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid #a855f7;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        
+        .member-box {
+            background: rgba(255, 255, 255, 0.08);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .member-box:hover {
+            transform: translateY(-10px) rotate(1deg);
+            box-shadow: 0 20px 40px rgba(168, 85, 247, 0.5);
+            border-color: #ff80ff;
+        }
+        
+        p {
+            margin: 10px 0;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+        
+        .emoji-spin {
+            display: inline-block;
+            animation: spin 3s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>✨ 𝒦𝒜𝒯𝒮𝐸𝒴𝐸 ✨</h1>
+
+    <!-- Group Info Box -->
+    <div class="section">
+        <h2>💫 GLOBAL K-POP GROUP 💫</h2>
+        <div class="section" style="background: rgba(200, 132, 252, 0.25); text-align: center; border: 2px solid #c084fc;">
+            <p style="font-size: 1.3em; margin: 20px 0;">🎭 KATSEYE - 6 Global Girls 🎭</p>
+            <p>💫 Talented girls from around the world! 💫</p>
+        </div>
+        <p style="font-size: 1.15em;">𝘼 𝙜𝙡𝙤𝙗𝙖𝙡 𝙥𝙖𝙥 𝙜𝙞𝙧𝙡 𝙜𝙧𝙤𝙪𝙥 𝙛𝙤𝙧𝙢𝙚𝙙 𝙗𝙮 𝙃𝙔𝘽𝙀 𝙖𝙣𝙙 𝙂𝙖𝙛𝙛𝙚𝙣 𝙍𝙚𝙘𝙤𝙣𝙙𝙨!</p>
+        <p>🎬 𝙁𝙞𝙫𝙚 𝙩𝙖𝙡𝙚𝙣𝙩𝙚𝙙 𝙜𝙞𝙧𝙡𝙨 𝙛𝙧𝙤𝙢 𝙖𝙧𝙤𝙪𝙣𝙙 𝙩𝙝𝙚 𝙬𝙤𝙧𝙡𝙙 🌍</p>
+        <p>🌟 𝙁𝙖𝙣𝙙𝙤𝙞𝙢: 𝙀𝙔𝙀𝙆𝙊𝙉𝙎 🐱 | 𝘿𝙖𝙣𝙠𝙯𝙪𝙧𝙩𝙖𝙖: 𝙅𝙪𝙣𝙚 28, 2024 ✨</p>
+    </div>
+
+    <!-- Members List Box -->
+    <div class="section">
+        <h2>👯‍♀️ 𝙈𝙚𝙢𝙗𝙖𝙧𝙨 ★ 🌺</h2>
+        <ul>
+            <li>💙 𝘿𝙖𝙣𝙞𝙚𝙡𝙖 💙</li>
+            <li>💜 𝙎𝙤𝙥𝙝𝙞𝙖 💜</li>
+            <li>💗 𝙔𝙤𝙤𝙣𝙘𝙝𝙖𝙚 💗</li>
+            <li>🍑 𝙈𝙖𝙜𝙖𝙣 🍑</li>
+            <li>💛 𝙈𝙖𝙣𝙖𝙣 💛</li>
+            <li>💚 𝙇𝙖𝙧𝙖 💚</li>
+        </ul>
+    </div>
+
+    <!-- Sophia - Purple -->
+    <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.8) 0%, rgba(126, 34, 206, 0.8) 100%);" class="member-box">
+        <h2>⚓ 𝙎𝙤𝙥𝙝𝙞𝙖</h2>
+        <p>𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙇𝙚𝙖𝙙𝙚𝙧</p>
+        <p>𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝙁𝙞𝙡𝙞𝙥𝙞𝙣𝙤-𝘼𝙢𝙚𝙧𝙞𝙘𝙖𝙣</p>
+        <p>𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝘿𝙚𝙘𝙚𝙢𝙗𝙚𝙧 31, 2002</p>
+        <p>𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝙋𝙪𝙧𝙥𝙡𝙚 💜</p>
+        <p>𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙃𝙚𝙧 𝙢𝙤𝙢 𝙞𝙨 𝙖 𝙛𝙖𝙢𝙤𝙪𝙨 𝙨𝙞𝙣𝙜𝙚𝙧 𝙞𝙣 𝙩𝙝𝙚 𝙋𝙝𝙞𝙡𝙞𝙥𝙥𝙞𝙣𝙚𝙨 𝙖𝙣𝙙 𝙨𝙝𝙚 𝙤𝙛𝙩𝙚𝙣 𝙘𝙤𝙤𝙠𝙨 𝙛𝙤𝙧 𝙩𝙝𝙚 𝙜𝙧𝙤𝙪𝙥!</p>
+    </div>
+
+    <!-- Manon - Yellow -->
+    <div style="background: linear-gradient(135deg, rgba(253, 224, 71, 0.8) 0%, rgba(202, 138, 4, 0.8) 100%);" class="member-box">
+        <h2>👑 𝙈𝙖𝙣𝙤𝙣</h2>
+        <p>𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙑𝙞𝙨𝙪𝙖𝙡</p>
+        <p>𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝙎𝙬𝙞𝙨𝙨-𝙄𝙩𝙖𝙡𝙞𝙖𝙣-𝙂𝙝𝙖𝙣𝙖𝙞𝙖𝙣</p>
+        <p>𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝙅𝙪𝙣𝙚 25, 2001</p>
+        <p>𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝙔𝙚𝙡𝙡𝙤𝙬 💛</p>
+        <p>𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙎𝙥𝙚𝙖𝙠𝙨 4 𝙡𝙖𝙣𝙜𝙪𝙖𝙜𝙚𝙨 𝙖𝙣𝙙 𝙞𝙨 𝙖𝙡𝙡𝙚𝙧𝙜𝙞𝙘 𝙩𝙤 𝙨𝙩𝙧𝙖𝙬𝙗𝙚𝙧𝙧𝙞𝙚𝙨!</p>
+    </div>
+
+    <!-- Daniela - Sky Blue -->
+    <div style="background: linear-gradient(135deg, rgba(125, 211, 252, 0.8) 0%, rgba(2, 132, 199, 0.8) 100%);" class="member-box">
+        <h2>🛡️ 𝘿𝙖𝙣𝙞𝙚𝙡𝙖</h2>
+        <p>𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙈𝙖𝙞𝙣 𝘿𝙖𝙣𝙘𝙚𝙧</p>
+        <p>𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝘼𝙢𝙚𝙧𝙞𝙘𝙖𝙣 (𝙑𝙚𝙣𝙚𝙯𝙪𝙚𝙡𝙖𝙣-𝘾𝙪𝙗𝙖𝙣)</p>
+        <p>𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝙅𝙪𝙡𝙮 1, 2004</p>
+        <p>𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝙎𝙠𝙮 𝘽𝙡𝙪𝙚 💙</p>
+        <p>𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝘼𝙥𝙥𝙚𝙖𝙧𝙚𝙙 𝙤𝙣 𝙎𝙤 𝙔𝙤𝙪 𝙏𝙝𝙞𝙣𝙠 𝙔𝙤𝙪 𝘾𝙖𝙣 𝘿𝙖𝙣𝙘𝙚 𝙖𝙣𝙙 𝙘𝙖𝙣 𝙙𝙖𝙣𝙘𝙚 𝙨𝙖𝙡𝙨𝙖, 𝘼𝙛𝙧𝙤-𝘾𝙪𝙗𝙖𝙣 𝙖𝙣𝙙 𝙢𝙤𝙧𝙚!</p>
+    </div>
+
+    <!-- Lara - Pastel Green -->
+    <div style="background: linear-gradient(135deg, rgba(134, 239, 172, 0.8) 0%, rgba(22, 163, 74, 0.8) 100%);" class="member-box">
+        <h2>🌿 𝙇𝙖𝙧𝙖</h2>
+        <p>𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙑𝙤𝙘𝙖𝙡𝙞𝙨𝙩 / 𝙈𝙪𝙨𝙞𝙘 𝙋𝙧𝙤𝙙𝙪𝙘𝙚𝙧</p>
+        <p>𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝙄𝙣𝙙𝙞𝙖𝙣-𝘼𝙢𝙚𝙧𝙞𝙘𝙖𝙣</p>
+        <p>𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝙉𝙤𝙫𝙚𝙢𝙗𝙚𝙧 3, 2005</p>
+        <p>𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝙂𝙧𝙚𝙚𝙣 💚</p>
+        <p>𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙎𝙝𝙚 𝙘𝙖𝙢𝙚 𝙪𝙥 𝙬𝙞𝙩𝙝 𝙩𝙝𝙚 𝙞𝙙𝙚𝙖 𝙩𝙤 𝙨𝙥𝙚𝙡𝙡 𝙞𝙩 𝙬𝙞𝙩𝙝 𝙖 𝙆 𝙞𝙣𝙨𝙩𝙚𝙖𝙙 𝙤𝙛 𝘾!</p>
+    </div>
+
+    <!-- Megan - Pastel Peach -->
+    <div style="background: linear-gradient(135deg, rgba(253, 186, 116, 0.8) 0%, rgba(234, 88, 12, 0.8) 100%);" class="member-box">
+        <h2>🍑 𝙈𝙚𝙜𝙖𝙣</h2>
+        <p>𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝘼𝙡𝙡-𝙍𝙤𝙪𝙣𝙙𝙚𝙧</p>
+        <p>𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝘼𝙢𝙚𝙧𝙞𝙘𝙖𝙣 (𝘾𝙝𝙞𝙣𝙚𝙨𝙚-𝙎𝙞𝙣𝙜𝙖𝙥𝙤𝙧𝙚𝙖𝙣)</p>
+        <p>𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝙁𝙚𝙗𝙧𝙪𝙖𝙧𝙮 10, 2006</p>
+        <p>𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝙋𝙖𝙨𝙩𝙚𝙡 𝙋𝙚𝙖𝙘𝙝 🍑</p>
+        <p>𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙃𝙖𝙞𝙡𝙨 𝙛𝙧𝙤𝙢 𝙃𝙤𝙣𝙤𝙡𝙪𝙡𝙪, 𝙃𝙖𝙬𝙖𝙞𝙞 𝙖𝙣𝙙 𝙞𝙨 𝙠𝙣𝙤𝙬𝙣 𝙛𝙤𝙧 𝙝𝙚𝙧 𝙨𝙞𝙜𝙣𝙖𝙩𝙪𝙧𝙚 𝙥𝙞𝙣𝙠 𝙝𝙞𝙜𝙝𝙡𝙞𝙜𝙝𝙩𝙨!</p>
+    </div>
+
+    <!-- Yoonchae - Pink -->
+    <div style="background: linear-gradient(135deg, rgba(249, 168, 212, 0.8) 0%, rgba(219, 39, 119, 0.8) 100%);" class="member-box">
+        <h2>🐚 𝙔𝙤𝙤𝙣𝙘𝙝𝙖𝙚</h2>
+        <p>𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙈𝙖𝙠𝙣𝙖𝙚 (𝙔𝙤𝙪𝙣𝙜𝙚𝙨𝙩)</p>
+        <p>𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝙆𝙤𝙧𝙚𝙖𝙣</p>
+        <p>𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝘿𝙚𝙘𝙚𝙢𝙗𝙚𝙧 6, 2007</p>
+        <p>𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝙋𝙞𝙣𝙠 🩷</p>
+        <p>𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙒𝙖𝙣𝙩𝙨 𝙩𝙚𝙡𝙚𝙠𝙞𝙣𝙚𝙨𝙞𝙨 𝙨𝙤 𝙨𝙝𝙚 𝙘𝙖𝙣 𝙚𝙖𝙩 𝙘𝙚𝙧𝙚𝙖𝙡 𝙬𝙞𝙩𝙝𝙤𝙪𝙩 𝙝𝙚𝙧 𝙝𝙖𝙣𝙙𝙨 😂</p>
+    </div>
+</body>
+</html>
