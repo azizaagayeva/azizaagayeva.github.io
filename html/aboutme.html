@@ -1,100 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Aziza</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: #f2f7ff;
-            color: #1d2b44;
-        }
-        .page {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-        .intro {
-            background: #ffffff;
-            border-radius: 24px;
-            padding: 28px;
-            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.08);
-        }
-        .intro h1 {
-            margin-top: 0;
-            font-size: 2rem;
-        }
-        .intro p {
-            line-height: 1.7;
-            margin: 16px 0;
-        }
-        .link-btn {
-            display: inline-block;
-            margin-top: 10px;
-            background: #4863b8;
-            color: white;
-            text-decoration: none;
-            padding: 12px 18px;
-            border-radius: 18px;
-            font-weight: bold;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .link-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 24px rgba(72, 99, 184, 0.25);
-        }
-        .cards {
-            display: grid;
-            gap: 20px;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            margin-top: 30px;
-        }
-        .card {
-            background: rgba(255, 255, 255, 0.96);
-            border-radius: 24px;
-            padding: 24px;
-            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-        }
-        .card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 20px 36px rgba(0, 0, 0, 0.12);
-        }
-        .card h2 {
-            margin-top: 0;
-            font-size: 1.2rem;
-        }
-        .card p {
-            line-height: 1.6;
-            margin: 12px 0 0;
-            color: #4b5a6f;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Aziza</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffd7f5, #d0f0ff);
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+      color: #2d1a3e;
+    }
+    .page {
+      max-width: 760px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .top {
+      background: #ffffffcc;
+      border: 3px dashed #ff87c3;
+      border-radius: 28px;
+      padding: 20px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2.1rem;
+      color: #4d2a6f;
+    }
+    p {
+      margin: 10px 0;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    .photo {
+      width: 100%;
+      border-radius: 24px;
+      margin: 18px 0;
+    }
+    .btn {
+      display: inline-block;
+      background: #ff81c0;
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 18px;
+      font-weight: bold;
+    }
+    .box {
+      background: #ffffffcc;
+      border-radius: 24px;
+      padding: 18px;
+      margin-top: 18px;
+      border: 2px solid #f0c3f4;
+    }
+    .box h2 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+      color: #6a2d7c;
+    }
+  </style>
 </head>
 <body>
-    <div class="page">
-        <div class="intro">
-            <h1>Hi, I am Aziza</h1>
-            <p>I'm 12 years old and I am writing my first real web page. I like simple and soft designs, and I am learning HTML with easy boxes and padding.</p>
-            <a class="link-btn" href="html.html">Click HTML to open another page</a>
-        </div>
-        <div class="cards">
-            <div class="card">
-                <h2>About Me</h2>
-                <p>My name is Aziza. I like making pages that are clear and pretty. I can write text, add links, and make things look nice.</p>
-            </div>
-            <div class="card">
-                <h2>What I am learning</h2>
-                <p>I am learning HTML, the language for web pages. I am also learning how to make buttons, boxes, and working links.</p>
-            </div>
-            <div class="card">
-                <h2>What I want</h2>
-                <p>I want more pages to click and open. I want to make a page where HTML takes me to a new page.</p>
-            </div>
-        </div>
+  <div class="page">
+    <div class="top">
+      <h1>Hi! I'm Aziza ??</h1>
+      <p>I'm 12 years old and I love making cute web pages. I write like a kid and I like colorful things.</p>
+      <p>This page is simple and happy. I added a cute picture and a button to go to another page.</p>
+      <a class="btn" href="html.html">Go to HTML page</a>
     </div>
+
+    <img class="photo" src="https://i.pinimg.com/originals/1b/93/7d/1b937d6d66d590abdbbfd988dc3bf9fd.gif" alt="Cute gif" />
+
+    <div class="box">
+      <h2>About me</h2>
+      <p>My name is Aziza. I like pink, purple, and soft clouds. I want my page to look like a cute notebook.</p>
+    </div>
+    <div class="box">
+      <h2>What I like</h2>
+      <p>I like drawing, using bright colors, and making simple web pages. I also like adding pictures that make me smile.</p>
+    </div>
+    <div class="box">
+      <h2>Why HTML</h2>
+      <p>HTML makes my page real. I can click a button and go to another page. That is cool and easy.</p>
+    </div>
+  </div>
 </body>
 </html>
