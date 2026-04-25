@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me - Aziza</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background: #eef2f7;
-            color: #1b2a41;
+            background: #f2f7ff;
+            color: #1d2b44;
         }
         .page {
             max-width: 900px;
@@ -20,8 +20,8 @@
         .intro {
             background: #ffffff;
             border-radius: 24px;
-            padding: 30px;
-            box-shadow: 0 16px 35px rgba(0, 0, 0, 0.08);
+            padding: 28px;
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.08);
         }
         .intro h1 {
             margin-top: 0;
@@ -29,7 +29,21 @@
         }
         .intro p {
             line-height: 1.7;
-            margin: 16px 0 0;
+            margin: 16px 0;
+        }
+        .link-btn {
+            display: inline-block;
+            background: #4863b8;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 18px;
+            font-weight: bold;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .link-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(72, 99, 184, 0.25);
         }
         .cards {
             display: grid;
@@ -55,29 +69,86 @@
         .card p {
             line-height: 1.6;
             margin: 12px 0 0;
-            color: #475569;
+            color: #4b5a6f;
         }
     </style>
 </head>
 <body>
     <div class="page">
         <div class="intro">
-            <h1>Hi, I am introducing myself</h1>
-            <p>This page is a simple beginner introduction. I am using easy HTML and CSS to show who I am and to make the page look neat with clean, smooth cubes and padding.</p>
+            <h1>Hi, I am Aziza</h1>
+            <p>I'm 12 years old and I am writing my first real web page. I like simple and soft designs, and I am learning HTML with easy boxes and padding.</p>
+            <a class="link-btn" href="html.html">Click HTML to open another page</a>
         </div>
         <div class="cards">
             <div class="card">
                 <h2>About Me</h2>
-                <p>I am learning how to build web pages. I use simple text, headings, and boxes to share a little bit about myself.</p>
+                <p>I am Aziza. I like making pages that are clear and pretty. I can write text, add links, and make things look nice.</p>
             </div>
             <div class="card">
-                <h2>Beginner Skills</h2>
-                <p>My beginner skills include HTML structure, basic styling, and using padding to make content comfortable to read.</p>
+                <h2>What I am learning</h2>
+                <p>I am learning HTML, the language for web pages. I am also learning how to make buttons, boxes, and working links.</p>
             </div>
             <div class="card">
-                <h2>My Goal</h2>
-                <p>I want to keep practicing and make more pages with smooth cubes, nice spacing, and beginner-friendly design.</p>
-            </div>
+                <h2>What I want</h2>
+                <p>I want more pages to click and see. I want to make a page where 
+Set-Content -Path 'c:\Users\user\Desktop\Git\azizaagayeva.github.io\html\html.html' -Value @'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f8ff;
+            color: #1d2b44;
+        }
+        .page {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .box {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 28px;
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+        }
+        .box h1 {
+            margin-top: 0;
+            font-size: 2rem;
+        }
+        .box p {
+            line-height: 1.7;
+            margin: 16px 0;
+        }
+        .link-btn {
+            display: inline-block;
+            background: #4863b8;
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 18px;
+            font-weight: bold;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(72, 99, 184, 0.25);
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="box">
+            <h1>HTML Page</h1>
+            <p>When you click HTML from the about page, you come here. This is another page made by Aziza.</p>
+            <p>HTML is what makes web pages. It uses tags like <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> to show headings and text.</p>
+            <a class="link-btn" href="aboutme.html">Back to About Me</a>
         </div>
     </div>
 </body>
