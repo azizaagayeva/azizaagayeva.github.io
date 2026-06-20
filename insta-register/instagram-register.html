@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Sign Up</title>
+    <link rel="icon" href="https://i.pinimg.com/736x/c4/05/9d/c4059db01cd59796c9016a2581aa32a7.jpg">
+    <link rel="stylesheet" href="instagram-register.css">
+</head>
+<body>
+    <div class="page">
+        <div class="signup-box">
+            <div class="signup-card">
+                <div class="card-heading">
+                    <h1>Get started on Instagram</h1>
+                    <p>Sign up to see photos and videos from your friends.</p>
+                </div>
+                <form action="https://www.instagram.com/accounts/web_create_ajax/" method="POST" class="signup-form">
+                    <label>
+                        <span>Mobile number or email</span>
+                        <input type="text" name="emailOrPhone" placeholder="Mobile number or email" required>
+                    </label>
+                    <label>
+                        <span>Password</span>
+                        <input type="password" name="password" placeholder="Password" required>
+                    </label>
+                    <div class="birthday-row">
+                        <label>
+                            <span>Birthday</span>
+                            <div class="birthday-selects">
+                                <select name="month" required>
+                                    <option value="">Month</option>
+                                    <option>Jan</option>
+                                    <option>Feb</option>
+                                    <option>Mar</option>
+                                    <option>Apr</option>
+                                    <option>May</option>
+                                    <option>Jun</option>
+                                    <option>Jul</option>
+                                    <option>Aug</option>
+                                    <option>Sep</option>
+                                    <option>Oct</option>
+                                    <option>Nov</option>
+                                    <option>Dec</option>
+                                </select>
+                                <select name="day" required>
+                                    <option value="">Day</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <select name="year" required>
+                                    <option value="">Year</option>
+                                    <option>2006</option>
+                                    <option>2005</option>
+                                    <option>2004</option>
+                                    <option>2003</option>
+                                    <option>2002</option>
+                                    <option>2001</option>
+                                    <option>2000</option>
+                                </select>
+                            </div>
+                        </label>
+                    </div>
+                    <label>
+                        <span>Full name</span>
+                        <input type="text" name="fullName" placeholder="Full name" required>
+                    </label>
+                    <label>
+                        <span>Username</span>
+                        <input type="text" name="username" placeholder="Username" required>
+                    </label>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+                <div class="account-prompt">
+                    <a href="../instagram/login.html">I already have an account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
