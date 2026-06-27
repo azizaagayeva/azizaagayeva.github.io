@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Inter, Arial, sans-serif;
+    background: #eef2f7;
+    color: #1f2937;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 16px;
+}
+
+.signup-box {
+    width: min(460px, 100%);
+}
+
+.signup-card {
+    background: #ffffff;
+    border: 1px solid #d6dce8;
+    border-radius: 28px;
+    box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+    padding: 32px;
+}
+
+.card-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.card-heading h1 {
+    margin: 0;
+    font-size: 32px;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    color: #111827;
+}
+
+.card-heading p {
+    margin: 16px auto 0;
+    max-width: 330px;
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.signup-form {
+    display: grid;
+    gap: 14px;
+}
+
+label {
+    display: grid;
+    gap: 8px;
+    font-size: 13px;
+    color: #475569;
+    text-align: left;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px 14px;
+    border-radius: 12px;
+    border: 1px solid #d6dce8;
+    background: #f8fafc;
+    color: #111827;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+select {
+    appearance: none;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #5b8de0;
+    box-shadow: 0 0 0 4px rgba(91, 141, 224, 0.16);
+}
+
+.birthday-row {
+    display: grid;
+    gap: 10px;
+}
+
+.birthday-selects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background: #1e4bb8;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 14px 0;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.account-prompt {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #475569;
+}
+
+.account-prompt a {
+    color: #1e4bb8;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.disclaimer {
+    margin-top: 24px;
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+.disclaimer p {
+    margin: 0 0 12px;
+}
+
+.disclaimer p:last-child {
+    margin-bottom: 0;
+}
+
+.disclaimer a {
+    color: #1e4bb8;
+    text-decoration: none;
+}
+
+@media (max-width: 560px) {
+    .signup-card {
+        padding: 28px 22px;
+    }
+
+    .page {
+        padding: 20px 12px;
+    }
+
+    .card-heading h1 {
+        font-size: 28px;
+    }
+}

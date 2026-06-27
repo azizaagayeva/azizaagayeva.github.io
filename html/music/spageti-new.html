@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE SSERAFIM</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background: #120900;
+            background-image: radial-gradient(ellipse at 30% 50%, rgba(180, 100, 0, 0.18) 0%, transparent 60%),
+                              radial-gradient(ellipse at 80% 20%, rgba(220, 140, 0, 0.1) 0%, transparent 50%);
+            font-family: 'DM Sans', sans-serif;
+            color: #ffefd6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            font-family: 'Playfair Display', serif;
+            color: #ffd080;
+            text-shadow: 0 0 30px rgba(245, 158, 11, 0.7), 0 0 60px rgba(200, 100, 0, 0.3);
+            animation: glow 2.5s ease-in-out infinite, bounce 3s ease-in-out infinite;
+            margin-bottom: 30px;
+            letter-spacing: 3px;
+        }
+        
+        h2 {
+            font-size: 1.6em;
+            font-family: 'Playfair Display', serif;
+            color: #f5c060;
+            text-shadow: 0 0 15px rgba(245, 158, 11, 0.6);
+        }
+        
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 20px rgba(245, 158, 11, 0.7), 0 0 40px rgba(200, 100, 0, 0.4); }
+            50% { text-shadow: 0 0 35px rgba(255, 180, 50, 1), 0 0 60px rgba(245, 158, 11, 0.6); }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        
+        .section {
+            background: rgba(60, 30, 0, 0.65);
+            border: 2px solid #8a5a00;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(160, 90, 0, 0.25);
+            transition: all 0.4s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 50px rgba(245, 158, 11, 0.35);
+            border-color: #d4900a;
+        }
+
+        .section p {
+            color: #e8c080;
+        }
+        
+        .gif-container {
+            text-align: center;
+            margin: 25px 0;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(245, 158, 11, 0.5);
+            border: 3px dashed #8a5a00;
+            transition: transform 0.3s ease;
+        }
+        
+        .gif-container:hover {
+            transform: scale(1.03);
+        }
+        
+        .gif-container img {
+            max-width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+            list-style: none;
+        }
+        
+        .members-grid li {
+            background: rgba(100, 55, 0, 0.5);
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid #8a5a00;
+            color: #ffd080;
+            font-weight: 500;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        
+        .member-box {
+            border-radius: 18px;
+            padding: 22px;
+            margin-bottom: 18px;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .member-box:hover {
+            transform: translateY(-8px) rotate(0.5deg);
+            box-shadow: 0 20px 40px rgba(160, 90, 0, 0.5);
+        }
+
+        .member-box h2 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        .member-box p {
+            margin: 8px 0;
+            line-height: 1.6;
+            font-size: 1em;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #c09030;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            border-bottom: 1px solid #8a5a00;
+            padding-bottom: 2px;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: #ffd080; }
+    </style>
+</head>
+<body>
+
+    <a class="back-link" href="music.html">← Back to Music Fan Page</a>
+
+    <h1>🦁 𝐿𝐸 𝒮𝒮𝐸𝑅𝒜𝐹𝐼𝑀 🦁</h1>
+
+    <!-- LE SSERAFIM Crazy GIF -->
+    <div class="gif-container">
+        <img src="Le_Sserafim_Crazy_GIF_-_Le_sserafim_Crazy_Dance_-_Discover___Share_GIFs.gif" alt="LE SSERAFIM Crazy">
+    </div>
+
+    <!-- Group Info Box -->
+    <div class="section">
+        <h2>⭐ HIGH-PERFORMANCE GIRL GROUP ⭐</h2>
+        <p style="font-size: 1.1em; margin-top: 12px;">𝙇𝙀 𝙎𝙎𝙀𝙍𝘼𝙁𝙄𝙈 𝙞𝙨 𝙖 𝙥𝙤𝙬𝙚𝙧𝙛𝙪𝙡 5-𝙢𝙚𝙢𝙗𝙚𝙧 𝙜𝙞𝙧𝙡 𝙜𝙧𝙤𝙪𝙥 𝙪𝙣𝙙𝙚𝙧 𝙃𝙔𝘽𝙀</p>
+        <p>🔥 𝙁𝙤𝙧𝙢𝙚𝙙 𝙩𝙝𝙧𝙤𝙪𝙜𝙝 𝙩𝙝𝙚 𝙧𝙚𝙖𝙡𝙞𝙩𝙮 𝙨𝙝𝙤𝙬 𝙄𝙏𝙈𝙀? 𝙇𝙚𝙩 𝙈𝙚 𝙄𝙣! 𝘿𝙚𝙗𝙪𝙩𝙚𝙙 𝙈𝙖𝙮 2, 2022 💫 | 𝙁𝙖𝙣𝙙𝙤𝙢: 𝙁𝙀𝘼𝙍𝙉𝙊𝙏 🦁</p>
+    </div>
+
+    <!-- Members List Box -->
+    <div class="section">
+        <h2>✨ 𝙈𝙚𝙢𝙗𝙚𝙧𝙨 ✨</h2>
+        <ul class="members-grid">
+            <li>🌸 𝙎𝙖𝙠𝙪𝙧𝙖 🌸</li>
+            <li>🐺 𝘾𝙝𝙖𝙚𝙬𝙤𝙣 🐺</li>
+            <li>🦌 𝙔𝙪𝙣𝙟𝙞𝙣 🦌</li>
+            <li>🦋 𝙆𝙖𝙯𝙪𝙝𝙖 🦋</li>
+            <li>🐰 𝙀𝙪𝙣𝙘𝙝𝙖𝙚 🐰</li>
+        </ul>
+    </div>
+
+    <!-- Sakura - Red -->
+    <div style="background: linear-gradient(135deg, rgba(160, 15, 15, 0.85) 0%, rgba(120, 5, 5, 0.9) 100%);" class="member-box">
+        <h2>🌸 𝙎𝙖𝙠𝙪𝙧𝙖 🌸</h2>
+        <p>👑 𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙇𝙚𝙖𝙙𝙚𝙧</p>
+        <p>🇯🇵 𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝙅𝙖𝙥𝙖𝙣𝙚𝙨𝙚</p>
+        <p>🎂 𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝙈𝙖𝙧𝙘𝙝 19, 1998</p>
+        <p>❤️ 𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝙍𝙚𝙙 ❤️</p>
+        <p>✨ 𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙁𝙤𝙧𝙢𝙚𝙧 𝙄𝙕*𝙊𝙉𝙀 𝙢𝙚𝙢𝙗𝙚𝙧 𝙖𝙣𝙙 𝙡𝙤𝙫𝙚𝙨 𝙅𝙖𝙥𝙖𝙣𝙚𝙨𝙚 𝙘𝙪𝙡𝙩𝙪𝙧𝙚! 🌸</p>
+    </div>
+
+    <!-- Chaewon - Orange -->
+    <div style="background: linear-gradient(135deg, rgba(160, 60, 0, 0.85) 0%, rgba(120, 40, 0, 0.9) 100%);" class="member-box">
+        <h2>🐺 𝘾𝙝𝙖𝙚𝙬𝙤𝙣 🐺</h2>
+        <p>🎤 𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙑𝙤𝙘𝙖𝙡𝙞𝙨𝙩</p>
+        <p>🇰🇷 𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝙆𝙤𝙧𝙚𝙖𝙣</p>
+        <p>🎂 𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝘼𝙪𝙜𝙪𝙨𝙩 1, 2000</p>
+        <p>🧡 𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝙊𝙧𝙖𝙣𝙜𝙚 🧡</p>
+        <p>✨ 𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙆𝙣𝙤𝙬𝙣 𝙛𝙤𝙧 𝙝𝙚𝙧 𝙖𝙢𝙖𝙯𝙞𝙣𝙜 𝙧𝙖𝙥 𝙨𝙠𝙞𝙡𝙡𝙨 𝙖𝙣𝙙 𝙫𝙞𝙗𝙧𝙖𝙣𝙩 𝙥𝙚𝙧𝙨𝙤𝙣𝙖𝙡𝙞𝙩𝙮! 🔥</p>
+    </div>
+
+    <!-- Yunjin - Yellow -->
+    <div style="background: linear-gradient(135deg, rgba(140, 90, 0, 0.85) 0%, rgba(100, 60, 0, 0.9) 100%);" class="member-box">
+        <h2>🦌 𝙔𝙪𝙣𝙟𝙞𝙣 🦌</h2>
+        <p>🎵 𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙑𝙤𝙘𝙖𝙡𝙞𝙨𝙩</p>
+        <p>🇺🇸 𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝙆𝙤𝙧𝙚𝙖𝙣-𝘼𝙢𝙚𝙧𝙞𝙘𝙖𝙣</p>
+        <p>🎂 𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝙉𝙤𝙫𝙚𝙢𝙗𝙚𝙧 8, 2001</p>
+        <p>💛 𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝙔𝙚𝙡𝙡𝙤𝙬 💛</p>
+        <p>✨ 𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙇𝙤𝙫𝙚𝙨 𝙢𝙪𝙨𝙞𝙘𝙖𝙡𝙨 𝙖𝙣𝙙 𝙞𝙨 𝙛𝙖𝙢𝙤𝙪𝙨 𝙛𝙤𝙧 𝙝𝙚𝙧 𝙖𝙘𝙩𝙞𝙣𝙜 𝙨𝙠𝙞𝙡𝙡𝙨! 💃</p>
+    </div>
+
+    <!-- Kazuha - Green -->
+    <div style="background: linear-gradient(135deg, rgba(10, 100, 40, 0.85) 0%, rgba(5, 70, 25, 0.9) 100%);" class="member-box">
+        <h2>🦋 𝙆𝙖𝙯𝙪𝙝𝙖 🦋</h2>
+        <p>💃 𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙈𝙖𝙞𝙣 𝘿𝙖𝙣𝙘𝙚𝙧</p>
+        <p>🇯🇵 𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝙅𝙖𝙥𝙖𝙣𝙚𝙨𝙚</p>
+        <p>🎂 𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝘼𝙪𝙜𝙪𝙨𝙩 9, 2002</p>
+        <p>💚 𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝙂𝙧𝙚𝙚𝙣 💚</p>
+        <p>✨ 𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙁𝙤𝙧𝙢𝙚𝙧 𝙃𝙔𝘽𝙀 𝙅𝙖𝙥𝙖𝙣 𝙥𝙧𝙖𝙘𝙩𝙞𝙘𝙚𝙚 𝙢𝙚𝙢𝙗𝙚𝙧 𝙖𝙣𝙙 𝙖𝙢𝙖𝙯𝙞𝙣𝙜 𝙖𝙩 𝙙𝙖𝙣𝙘𝙚! 🔥</p>
+    </div>
+
+    <!-- Eunchae - Blue -->
+    <div style="background: linear-gradient(135deg, rgba(20, 60, 160, 0.85) 0%, rgba(10, 40, 120, 0.9) 100%);" class="member-box">
+        <h2>🐰 𝙀𝙪𝙣𝙘𝙝𝙖𝙚 🐰</h2>
+        <p>✨ 𝙋𝙤𝙨𝙞𝙩𝙞𝙤𝙣: 𝙈𝙖𝙠𝙣𝙖𝙚</p>
+        <p>🇰🇷 𝙉𝙖𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮: 𝙆𝙤𝙧𝙚𝙖𝙣</p>
+        <p>🎂 𝘽𝙞𝙧𝙩𝙝𝙙𝙖𝙮: 𝙉𝙤𝙫𝙚𝙢𝙗𝙚𝙧 10, 2006</p>
+        <p>💙 𝙁𝙖𝙫 𝘾𝙤𝙡𝙤𝙧: 𝘽𝙡𝙪𝙚 💙</p>
+        <p>✨ 𝙁𝙪𝙣 𝙁𝙖𝙘𝙩: 𝙏𝙝𝙚 𝙮𝙤𝙪𝙣𝙜𝙚𝙨𝙩 𝙢𝙚𝙢𝙗𝙚𝙧 𝙖𝙣𝙙 𝙞𝙨 𝙠𝙣𝙤𝙬𝙣 𝙛𝙤𝙧 𝙝𝙚𝙧 𝙬𝙞𝙣𝙣𝙞𝙣𝙜 𝙘𝙝𝙖𝙧𝙢 𝙖𝙣𝙙 𝙙𝙖𝙣𝙘𝙞𝙣𝙜! 🌟</p>
+    </div>
+
+</body>
+</html>
