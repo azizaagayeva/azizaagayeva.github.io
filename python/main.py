@@ -1,6 +1,6 @@
-# print(" Hello world !! ")
-# x =  "python" 
-# print(x)
+print(" Hello world !! ")
+x =  "python" 
+print(x)
 a = 12
 b = 8
 print(a+b)#toplama
