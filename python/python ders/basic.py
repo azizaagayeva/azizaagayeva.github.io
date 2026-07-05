@@ -21,3 +21,7 @@ y = int(input("ikinci reqem :"))
 print( " x + y ",( x + y ), "edir" )
 
 print( " x - y ",( x - y ), "edir" )
+
+print( " x * y ",( x * y ), "edir" )
+
+print( " x / y ",( x / y ), "edir" )
