@@ -24,9 +24,9 @@
 # print("tam cavabi: " ,a//b)
 # print("qaliqli cavab" , a%b)
 
-a = input("number")
-b = int(input("enter the second number:" ))
-c = int(input("enter the third number:" ))
+# a = input("number")
+# b = int(input("enter the second number:" ))
+# c = int(input("enter the third number:" ))
 
 
-print (a , b + c)
+# print (a , b + c)
