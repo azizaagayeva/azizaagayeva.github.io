@@ -42,6 +42,10 @@ if(18 > age):
 else:
     print("mekteblisen")
 
+elif (18<=age>30):
+
+print("eskerlik ")
+
 if(18<=age<40):
     print("yetiskin")
 
