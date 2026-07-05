@@ -35,11 +35,18 @@ age = int(input("enter your age: "))
 #     print("ur too young ")
 
 if(18 > age):
-    print("usaq")
 
-elif(18=age<35)
-    print("yetiskin")
+    if(age < 6):
+     print("bebeska")
+
 else:
+    print("mekteblisen")
+
+if(18<=age<40):
+    print("yetiskin")
+
+elif (40<=age<65):
     print("orta yaslli")
+
 else:
      print("pensiyaner")
